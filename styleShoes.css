@@ -109,6 +109,10 @@ section div div {
 
 /* Footer */
 
+footer {
+    margin-bottom: 15px;
+}
+
 footer ul {
     justify-content: space-evenly;
 }
