@@ -1,0 +1,121 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* Header */
+
+header {
+    margin: 15px 0;
+}
+
+h1 {
+    color: hotpink;
+}
+
+/* Navigation */
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    display: block;
+    padding: 15px 30px;
+}
+
+a.active {
+    color: hotpink;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Main Content */
+
+section {
+    margin: 15px 0;
+}
+
+article {
+    position: relative;
+}
+
+article ul {
+    justify-content: start;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+article a {
+    background-color: white;
+}
+
+section div {
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+section div div {
+    outline: 1px solid black;
+    border: 5px solid white;
+}
+
+/* Zoom Animation */
+
+.img-hover-zoom {
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: .3s ease;
+}
+
+.img-hover-zoom img:hover {
+    scale: 1.2;
+}
+
+/* Footer */
+
+footer ul {
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: hotpink;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: normal;
+}
